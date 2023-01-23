@@ -26,6 +26,8 @@ import INSTAGRAM from '../../media/social/instagram.png'
 import FACEBOOK from '../../media/social/facebook.png'
 import EMAIL from '../../media/social/email.png'
 import TELEPHONE from '../../media/social/tel.png'
+import INPUT_PROJECT from '../../media/projects/input.gif'
+import WINDBNB_PROJECT from '../../media/projects/windbnb.gif'
 
 
 import { useSelector } from 'react-redux'
@@ -55,7 +57,11 @@ export default function Home() {
                     My focus is on efficiency, quality and attention to detail. I am open to new challenges and continuous learning in my career.
                     </h5>
                     <br></br>
-                    <div className='home-home-btn btn align-self-center border-0'>CONTACT ME</div>
+                        <div className='home-home-btn btn align-self-center border-0 justify-content-center'>
+                            <a className='home-a' href='#contact'>
+                                CONTACT ME
+                            </a>
+                        </div>
                 </div> 
                 :
                 <div className='home-home-text-container-sm col-5-sm d-flex flex-column justify-content-center'>
@@ -66,9 +72,11 @@ export default function Home() {
                     Mi enfoque es la eficiencia, la calidad y los detalles. Estoy abierto a nuevos desafíos y aprendizaje continuo en mi carrera.
                     </h5>
                     <br></br>
-                    <div className='home-home-btn btn align-self-center border-0'>
-                        <a href='#contact'>CONTÁCTAME</a>
-                    </div>
+                        <div className='home-home-btn btn align-self-center border-0 justify-content-center'>
+                            <a className='home-a' href='#contact'>
+                                CONTÁCTAME
+                            </a>
+                        </div>
                 </div>
             }
         </div>
@@ -199,11 +207,21 @@ export default function Home() {
         {/**
          * PROJECTS SECTION
          */}
+        <a name='projects'></a>
         <div className='home-projects-container d-flex justify-content-center p-5'>
-            <a name='projects'></a>
-                PRÓXIMAMENTE
-            <a name='contact'></a>     
+            
+                <div className='mr-3 pointer rounded'>
+                    <img src={ WINDBNB_PROJECT } alt="project" style={{ width: '300px' }} />
+                    <div className='text-center'>Windbnb</div>
+                    <div className='text-center'>Small version of Airbnb</div>
+                </div>  
+                <div className='rounded pointer'>
+                    <img src={ INPUT_PROJECT } alt="project" style={{ width: '300px' }}/>
+                    <div className='text-center'>Input Components</div>
+                    <div className='text-center'>List of reusable components</div>
+                </div>
         </div>
+        <a name='contact'></a>   
 
         {/**
          * CONTACT SECTION

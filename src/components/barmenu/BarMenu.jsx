@@ -1,6 +1,7 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { CHANGE_LENGUAGE } from '../../reducers/slice'
+import CV from '../../documents/CV_DEVELOPER.pdf'
 import '../../styles/style.css'
 
 export default function () {
@@ -51,14 +52,16 @@ export default function () {
                     }
                 </div>
             </div>
-            <div className='barmenu-links-sm barmenu-btn btn border-0'>
-                {
-                    (language === 'ENGLISH') ?
-                    'DOWNLOAD CV'
-                    :
-                    'DESCARGAR CV'
-                }
-            </div>
+            <a href={CV} target='_blank'>
+                <div className='barmenu-links-sm barmenu-btn btn border-0'>
+                    {
+                        (language === 'ENGLISH') ?
+                        'DOWNLOAD CV'
+                        :
+                        'DESCARGAR CV'
+                    }
+                </div>
+            </a>
         </div>
     </div>
   )

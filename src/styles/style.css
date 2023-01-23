@@ -4,6 +4,10 @@ body {
     overflow-x: hidden;
 }
 
+.pointer {
+    cursor: pointer;
+}
+
 /*
 *   LOADING
 */
@@ -84,6 +88,11 @@ body {
 HOME SECTION
 */
 
+.home-a,
+.home-a:hover {
+    color: black;
+    text-decoration: none;
+}
 
 .home-home-div-empty {
     height: 80px;
@@ -112,7 +121,7 @@ HOME SECTION
 .home-home-btn:hover {
     background-color: yellow;
     color: black;
-    transition: 2s all ease-in-out;
+    transition: 0.5s all ease-in-out;
 }
 
 h1 {
