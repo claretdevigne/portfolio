@@ -30,8 +30,8 @@ export default function () {
             :
             <div className='barmenu-links-sm d-flex' style={{ gap: '1rem' }}>
                 <div className='barmenu-div-links'><a className='barmenu-white-text' href='#about-me'>Sobre mi</a></div>
-                <div className='barmenu-div-links'><a className='barmenu-white-text' href='#certificates'>Proyectos</a></div>
                 <div className='barmenu-div-links'><a className='barmenu-white-text' href='#projects'>Certificados</a></div>
+                <div className='barmenu-div-links'><a className='barmenu-white-text' href='#certificates'>Proyectos</a></div>
                 <div className='barmenu-div-links'><a className='barmenu-white-text' href='#contact' >Contacto</a></div>
                 <div className='barmenu-div-links'><a className='barmenu-white-text' href='#youtube' >Youtube</a></div>
             <div className='barmenu-div-links'><a className='barmenu-white-text' href='#blog' >Blog</a></div>

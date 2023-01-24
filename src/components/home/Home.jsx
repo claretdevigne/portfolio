@@ -28,6 +28,7 @@ import EMAIL from '../../media/social/email.png'
 import TELEPHONE from '../../media/social/tel.png'
 import INPUT_PROJECT from '../../media/projects/input.gif'
 import WINDBNB_PROJECT from '../../media/projects/windbnb.gif'
+import QUIZ_PROJECT from '../../media/projects/country-quiz.gif'
 
 
 import { useSelector } from 'react-redux'
@@ -208,18 +209,32 @@ export default function Home() {
          * PROJECTS SECTION
          */}
         <a name='projects'></a>
-        <div className='home-projects-container d-flex justify-content-center p-5'>
-            
-                <div className='mr-3 pointer rounded'>
-                    <img src={ WINDBNB_PROJECT } alt="project" style={{ width: '300px' }} />
-                    <div className='text-center'>Windbnb</div>
+        <div className='home-projects-container d-flex flex-column justify-content-center p-5'>
+            <div className='d-flex justify-content-center mb-5'>
+                {
+                    (language === 'ENGLISH') ?
+                    <h3>PROJECTS</h3>
+                    :
+                    <h3>PROYECTOS</h3>
+                }
+            </div>
+            <div className='d-flex flex-wrap justify-content-center'>
+                <div className='project-item mr-4 mb-4 pointer rounded'>
+                    <a href="https://windbnb-claretdevigne.netlify.app/"><img src={ WINDBNB_PROJECT } alt="project" /></a>
+                    <div className='mt-2 text-center'>Windbnb</div>
                     <div className='text-center'>Small version of Airbnb</div>
                 </div>  
-                <div className='rounded pointer'>
-                    <img src={ INPUT_PROJECT } alt="project" style={{ width: '300px' }}/>
-                    <div className='text-center'>Input Components</div>
+                <div className='project-item mr-4 mb-4 rounded pointer'>
+                    <a href='https://countryquiz-claretdevigne.netlify.app/'><img src={ QUIZ_PROJECT } alt="project" /></a>
+                    <div className='mt-2 text-center'>Country Quiz App</div>
+                    <div className='text-center'>Selecction Multiple Game</div>
+                </div>
+                <div className='project-item rounded mb-4 pointer'>
+                    <a href='https://button-components-claretdevigne.netlify.app/'><img src={ INPUT_PROJECT } alt="project" /></a>
+                    <div className='mt-2 text-center'>Input Components</div>
                     <div className='text-center'>List of reusable components</div>
                 </div>
+            </div>
         </div>
         <a name='contact'></a>   
 

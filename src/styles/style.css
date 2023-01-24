@@ -307,6 +307,12 @@ h1 {
     background-color: #2C2E33
 }
 
+@media (max-width: 700px) {
+    .project-item {
+        margin-right: 0 !important;
+    }
+}
+
 /*
 * CONTACT SECTION
 */
