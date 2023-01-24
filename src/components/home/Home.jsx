@@ -222,17 +222,17 @@ export default function Home() {
                 <div className='project-item mr-4 mb-4 pointer rounded'>
                     <a href="https://windbnb-claretdevigne.netlify.app/"><img src={ WINDBNB_PROJECT } alt="project" /></a>
                     <div className='mt-2 text-center'>Windbnb</div>
-                    <div className='text-center'>Small version of Airbnb</div>
+                    <p className='text-center' style={{ maxWidth: '300px'}}>Small version of Airbnb created using React</p>
                 </div>  
                 <div className='project-item mr-4 mb-4 rounded pointer'>
                     <a href='https://countryquiz-claretdevigne.netlify.app/'><img src={ QUIZ_PROJECT } alt="project" /></a>
                     <div className='mt-2 text-center'>Country Quiz App</div>
-                    <div className='text-center'>Selecction Multiple Game</div>
+                    <p className='text-center' style={{ maxWidth: '300px'}}>Selecction Multiple Game, creting with React. The data is obtained from the API https://restcountries.com/v3.1/all</p>
                 </div>
                 <div className='project-item rounded mb-4 pointer'>
                     <a href='https://button-components-claretdevigne.netlify.app/'><img src={ INPUT_PROJECT } alt="project" /></a>
                     <div className='mt-2 text-center'>Input Components</div>
-                    <div className='text-center'>List of reusable components</div>
+                    <div className='text-center' style={{ maxWidth: '300px'}}>List of reusable components made with React and Bootstrap</div>
                 </div>
             </div>
         </div>
