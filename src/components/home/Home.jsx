@@ -29,6 +29,9 @@ import TELEPHONE from '../../media/social/tel.png'
 import INPUT_PROJECT from '../../media/projects/input.gif'
 import WINDBNB_PROJECT from '../../media/projects/windbnb.gif'
 import QUIZ_PROJECT from '../../media/projects/country-quiz.gif'
+import TODO_APP from '../../media/projects/todo.gif'
+import WEATHER_APP from '../../media/projects/weather-app.gif'
+import RANDOM_APP from '../../media/projects/random-quote.gif'
 
 
 import { useSelector } from 'react-redux'
@@ -98,6 +101,18 @@ export default function Home() {
                     <img className="home-skillsbar-item home-skills home-skills-9 d-block w-100 mr-5" src={CSS} alt="item"/>
                     <img className="home-skillsbar-item home-skills home-skills-10 d-block w-100 mr-5" src={HTML} alt="item"/>
                 </div>
+                <div className='home-skills-bar-items-container-2 py-3 d-flex justify-content-center align-items-center'>
+                    <img className="home-skillsbar-item home-skills home-skills-1 w-100 mr-5" src={JS} alt="item"/>
+                    <img className="home-skillsbar-item home-skills home-skills-2 d-block w-100 mr-5" src={REACT} alt="item"/>
+                    <img className="home-skillsbar-item home-skills home-skills-3 d-block w-100 mr-5" src={NODE} alt="item"/>
+                    <img className="home-skillsbar-item home-skills home-skills-4 d-block w-100 mr-5" src={PYTHON} alt="item"/>
+                    <img className="home-skillsbar-item home-skills home-skills-5 d-block w-100 mr-5" src={DJANGO} alt="item"/>
+                    <img className="home-skillsbar-item home-skills home-skills-6 d-block w-100 mr-5" src={GIT} alt="item"/>
+                    <img className="home-skillsbar-item home-skills home-skills-7 d-block w-100 mr-5" src={BOOTSTRAP} alt="item"/>
+                    <img className="home-skillsbar-item home-skills home-skills-8 d-block w-100 mr-5" src={SASS} alt="item"/>
+                    <img className="home-skillsbar-item home-skills home-skills-9 d-block w-100 mr-5" src={CSS} alt="item"/>
+                    <img className="home-skillsbar-item home-skills home-skills-10 d-block w-100 mr-5" src={HTML} alt="item"/>
+                </div>
                 <a name='about-me'></a>
         </div>
 
@@ -113,9 +128,18 @@ export default function Home() {
                     </div>
                     <div className='home-aboutme-content d-flex mt-4'>
                         <div className="home-aboutme-content-texts col ml-5">
-                            <p className='text-justify'>
-                                My name is Claret Devigne and I am a Full Stack developer with extensive experience in Javascript, React, Python, CSS, HTML, Git, Bootstrap, Node, and Django. I am certified in some of them by Open-Bootcamp and also in Data Science 101 by IBM - Cognitive Class.
-                            </p>
+                            <p className='text-justify'>My name is Claret Devigne and I am a Full Stack developer with experience in: HTML5, CSS3, Bootstrap, SASS, Javascript, Typescript, Python, React, Angular, Django, Express, React Native, Electron, Node, AWS, Git, Github and Docker.</p>
+                            <ul>
+                                <li>Frontend: HTML 5, CSS 3, Bootstrap, SASS.</li>
+                                <li>Programming Languages as Javascript, Typescript and learning Python and C#</li>
+                                <li>Frameworks like React JS, Express JS, React Native and learning Angular, Django and Electron</li>
+                                <li>Git Control Version and Github repositories</li>
+                                <li>AWS (EC2, S3)</li>
+                                <li>Databases as SQLite, MySQL, PostgreSQL, MongoDB, DynamoDB, SQL.</li>
+                                <li>Docker</li>
+                                <li>Notion and Slack</li>
+                            </ul>
+                            <p>I am certified in some of them by Open-Bootcamp and also in Data Science 101 by IBM - Cognitive Class and learning the other ones.</p>
                             <br></br>
                             <p className='text-justify'>
                                 I love web application development, from design to implementation. I use the latest technologies and methodologies to provide customized and scalable solutions for each of my clients. My English is at an intermediate level, and I also speak basic conversational French, which allows me to effectively communicate with clients from different countries. In addition, I have skills in graphic design and communication, which help me understand my clients' needs effectively and provide them with solutions focused on their business.
@@ -144,8 +168,19 @@ export default function Home() {
                     <div className='home-aboutme-content d-flex mt-4'>
                         <div className="home-aboutme-content-texts col ml-5">
                             <p className='text-justify'>
-                                Mi nombre es Claret Devigne y soy programador Full Stack con amplia experiencia en Javascript, React, Python, CSS, HTML, Git, Bootstrap, Node y Django. Estoy certificado en algunas de ellas por Open-Bootcamp y también en Data Science 101 por IBM - Cognitive Class.
+                                Mi nombre es Claret Devigne y soy programador Full Stack con amplia experiencia en HTML5, CSS3, Bootstrap, SASS, Javascript, Typescript, Python, React, Angular, Django, Express, React Native, Electron, Node, AWS, Git, Github y Docker.
                             </p>
+                            <ul>
+                                <li>Frontend: HTML 5, CSS 3, Bootstrap, SASS.</li>
+                                <li>Lenguajes de programación como Javascript, Typescript y aprendiendo Python y C#</li>
+                                <li>Frameworks como React JS, Express JS, React Native y aprendiendo Angular, Django y Electron</li>
+                                <li>Control de versiones con GIT y repositorios en Github</li>
+                                <li>AWS (EC2, S3)</li>
+                                <li>Manejo y creación de bases de datos con SQLite, MySQL, PostgreSQL, MongoDB, DynamoDB y el lenguaje SQL.</li>
+                                <li>Docker</li>
+                                <li>Notion y Slack</li>
+                            </ul>
+                            <p>Estoy certificado en algunas de ellas por Open-Bootcamp y también en Data Science 101 por IBM - Cognitive Class mientras que aprendo las otras tecnologías.</p>
                             <br></br>
                             <p className='text-justify'>
                                 Me encanta el desarrollo de aplicaciones web, desde el diseño hasta la implementación. Utilizo las últimas tecnologías y metodologías para ofrecer soluciones personalizadas y escalables para cada uno de mis clientes. Mi manejo del idioma inglés es de nivel intermedio-avanzado, también hablo francés a nivel básico conversacional, lo que me permite comunicarme de manera efectiva con clientes de diferentes países. Además, tengo habilidades en diseño gráfico y en comunicación, lo que me ayuda a entender las necesidades de mis clientes de manera efectiva y brindarles soluciones enfocadas en su negocio.
@@ -219,15 +254,30 @@ export default function Home() {
                 }
             </div>
             <div className='d-flex flex-wrap justify-content-center'>
-                <div className='project-item mr-4 mb-4 pointer rounded'>
-                    <a href="https://windbnb-claretdevigne.netlify.app/"><img src={ WINDBNB_PROJECT } alt="project" /></a>
-                    <div className='mt-2 text-center'>Windbnb</div>
-                    <p className='text-center' style={{ maxWidth: '300px'}}>Small version of Airbnb created using React</p>
-                </div>  
                 <div className='project-item mr-4 mb-4 rounded pointer'>
                     <a href='https://countryquiz-claretdevigne.netlify.app/'><img src={ QUIZ_PROJECT } alt="project" /></a>
                     <div className='mt-2 text-center'>Country Quiz App</div>
                     <p className='text-center' style={{ maxWidth: '300px'}}>Selecction Multiple Game, creting with React. The data is obtained from the API https://restcountries.com/v3.1/all</p>
+                </div>
+                <div className='project-item mr-4 mb-4 pointer rounded'>
+                    <a href="https://windbnb-claretdevigne.netlify.app/"><img src={ WINDBNB_PROJECT } alt="project" /></a>
+                    <div className='mt-2 text-center'>Windbnb</div>
+                    <p className='text-center' style={{ maxWidth: '300px'}}>Small version of Airbnb created using React</p>
+                </div>
+                <div className='project-item rounded mb-4 pointer'>
+                    <a href='https://todo-angular-claretdevigne.netlify.app/'><img style={{ width: "300px"}}  src={ TODO_APP } alt="project" /></a>
+                    <div className='mt-2 text-center'>TODO App</div>
+                    <div className='text-center' style={{ maxWidth: '300px'}}>TODO created using Angular framework.</div>
+                </div>
+                <div className='project-item rounded mr-4 mb-4 pointer'>
+                    <a href='https://random-quote-claretdevigne.netlify.app/'><img style={{ width: "300px"}}  src={ RANDOM_APP } alt="project" /></a>
+                    <div className='mt-2 text-center'>Random Quote</div>
+                    <div className='text-center' style={{ maxWidth: '300px'}}>App created in React, the data comes from an API thru a JSON file.</div>
+                </div>
+                <div className='project-item rounded mr-4 mb-4 pointer'>
+                    <a href='https://weather-app-claretdevigne.netlify.app/'><img style={{ width: "300px"}}  src={ WEATHER_APP } alt="project" /></a>
+                    <div className='mt-2 text-center'>Weather APP</div>
+                    <div className='text-center' style={{ maxWidth: '300px'}}>Weather app with the data from the API of Open-meteo</div>
                 </div>
                 <div className='project-item rounded mb-4 pointer'>
                     <a href='https://button-components-claretdevigne.netlify.app/'><img src={ INPUT_PROJECT } alt="project" /></a>

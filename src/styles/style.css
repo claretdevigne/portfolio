@@ -194,22 +194,40 @@ h1 {
 */
 
 .home-skills-bar-items-container {
+    white-space: nowrap;
     position: relative;
+    left: 27%;
     animation: newMovingBar 10s linear infinite;
 }
 
 @keyframes newMovingBar {
     0% {
-        right: -109%;
+        left: 29%;
     }
     100% {
-        right: 109%;
+        left: 127%;
+    }
+}
+
+.home-skills-bar-items-container-2 {
+    white-space: nowrap;
+    position: relative;
+    left: -23%;
+    animation: newMovingBar2 10s linear infinite;
+}
+
+@keyframes newMovingBar2 {
+    0% {
+        left: -120%;
+    }
+    100% {
+        left: -22%;
     }
 }
 
 .home-skillsbar-item {
     position: relative;
-    max-width: 8vw;
+    max-width: 6.2vw;
 }
 
 .home-skills-title h4{
